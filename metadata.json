@@ -1,0 +1,6 @@
+{
+  "name": "Chronos - Smart Personal Task & Schedule Planner",
+  "description": "Интеллектуальный персональный планировщик задач и времени с естественным вводом, автоматическим поиском свободных окон в расписании и напоминаниями.",
+  "requestFramePermissions": ["notifications"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

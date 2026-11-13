@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <rect width="512" height="512" rx="128" fill="#0D0F14"/>
+  <rect x="24" y="24" width="464" height="464" rx="104" stroke="#252936" stroke-width="8"/>
+  <defs>
+    <linearGradient id="chronosGlow" x1="120" y1="120" x2="392" y2="392" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#818CF8" />
+      <stop offset="50%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#4F46E5" />
+    </linearGradient>
+    <filter id="shadow" x="180" y="160" width="160" height="200" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#6366F1" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <!-- Outer subtle dial markings -->
+  <circle cx="256" cy="256" r="160" stroke="#1E232F" stroke-width="12" stroke-linecap="round" />
+  <circle cx="256" cy="256" r="160" stroke="url(#chronosGlow)" stroke-width="12" stroke-dasharray="240 760" stroke-linecap="round" />
+  <!-- Center Chronos Hourglass & Checkmark glyph -->
+  <path d="M256 160V256L320 320" stroke="url(#chronosGlow)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"/>
+  <circle cx="256" cy="256" r="18" fill="#818CF8" />
+  <circle cx="370" cy="180" r="10" fill="#34D399" />
+</svg>
