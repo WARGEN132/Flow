@@ -125,19 +125,20 @@ export class NotificationService {
 
     if (Notification.permission === 'granted') {
       try {
+        const iconUrl = `${import.meta.env.BASE_URL}icon.svg`;
         if ('serviceWorker' in navigator) {
           const reg = await navigator.serviceWorker.ready;
           if (reg && reg.showNotification) {
             reg.showNotification(title, {
-              icon: '/icon.svg',
-              badge: '/icon.svg',
+              icon: iconUrl,
+              badge: iconUrl,
               ...options,
             });
             return;
           }
         }
         new Notification(title, {
-          icon: '/icon.svg',
+          icon: iconUrl,
           ...options,
         });
       } catch {
